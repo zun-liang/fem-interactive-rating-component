@@ -1,10 +1,11 @@
-:root {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 15px;
+}
+
+:root {
     --orange: hsl(25, 97%, 53%);
-    --white: hsl(0, 0%, 100%);
     --grey-light: hsl(217, 12%, 63%);
     --grey-medium: hsl(216, 12%, 54%);
     --blue-dark: hsl(213, 19%, 18%);
@@ -13,54 +14,59 @@
     --bg-color-dark: hsl(218 ,24%, 13%);
 }
 
+html {
+    font-size: 15px;
+}
+
 body {
+    height: 100%;
+    min-height: 100vh;
     background-color: var(--blue-very-dark);
     color: var(--grey-light);
-    font-size: 1.1rem;
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    line-height: 1.6;
 }
 
-/* styles for rating page */
+main {
+    width: 100%; 
+}
+
 .rating, 
 .thank-you {
+    width: 50%;
+    max-width: 420px;
+    min-width: 375px;
     background: linear-gradient(var(--bg-color-light), var(--bg-color-dark));
     border-radius: 1.3rem;
     padding: 2rem;
-    max-width: 375px;
-    aspect-ratio: 15/16;
+    margin: 0 auto;
 }
 
 .star {
-    border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
     background-color: var(--blue-dark);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .star > img {
-    width: 36%;
+    width: 35%;
 }
 
 .rating-question, 
 .thank-you-title {
-    color: var(--white);
+    color: white;
     font-size: 2rem;
     font-weight: 600;
-}
-
-.rating-explain {
-    margin-top: -1rem;
-    padding-right: 2.5rem;
+    margin: 1rem 0;
 }
 
 ul {
@@ -69,6 +75,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
+    
 }
 
 ul > li {
@@ -78,8 +85,8 @@ ul > li {
 .btn-rating {
     border: none;
     border-radius: 50%;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--blue-dark);
     color: var(--grey-light); 
     font-size: 1.1rem;
@@ -90,34 +97,34 @@ ul > li {
 
 .btn-rating:hover {
     background-color: var(--grey-medium);
-    color: var(--white);
+    color: white;
     cursor: pointer;
 }
 
 .btn-rating:focus {
     background-color: var(--orange);
-    color: var(--white);
+    color: white;
 }
 
-#submit {
+button {
+    width: 100%;
+    height: 3.5rem;
+    margin: .5rem 0;
     background-color: var(--orange);
     border: none;
     border-radius: 2rem;
     text-transform: uppercase;
-    color: var(--white);
-    width: 100%;
-    padding: 1.2rem 0 1.2rem 0;
+    color: white;
     letter-spacing: 2px;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
 }
 
-#submit:hover {
-    background-color: var(--white);
+button:hover {
+    background-color: white;
     color: var(--orange);
     cursor: pointer;
 }
 
-/* styles for thank you page */
 .thank-you {
     display: flex;
     flex-direction: column;
@@ -136,13 +143,15 @@ ul > li {
 }
 
 .result {
-    background-color: var(--blue-dark);
-    text-align: center;
-    color: var(--orange);
     width: 58%;
     height: 2.8rem;
+    background-color: var(--blue-dark);
+    color: var(--orange);
     border-radius: 2rem;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .result > p {
@@ -151,50 +160,12 @@ ul > li {
     padding-top: 0.5rem;
 }
 
-#result {
-    display: inline-block;
-}
-
 .thank-you-title {
     margin-top: 0.8rem;
 }
 
 .thank-you-respond {
     text-align: center;
-    margin-top: -2rem;
+    margin: -1.5rem 0 1rem;
     padding-right: 1rem;
-}
-
-@media (min-width: 800px) {
-     .rating, .thank-you {
-        width: 375px;
-        height: 375px;
-    }
-
-    .rating-explain {
-        padding: 0;
-    }
-
-    #submit {
-        padding: 1rem 0 1rem 0;
-        font-size: 1rem;
-    }
-
-    .thank-you > img {
-        width: 48%;
-    }
-
-    .thank-you-respond {
-        padding: 0;
-    }
-}
-
-/* footer */
-.attribution { 
-    padding-top: 1rem;
-    font-size: 0.73rem; 
-    text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%);
 }
