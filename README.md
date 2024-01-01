@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Continued development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
 
 ## Overview
 
@@ -30,6 +29,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+
 - Screenshot Mobile Rating Page: [link](./screenshots/screenshot-mobile-rating.png)
 - Screenshot Mobile Thank You State: [link](./screenshots/screenshot-mobile-thank-you.png)
 - Screenshot Desktop Rating Page: [link](./screenshots/screenshot-desktop-rating.png)
@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [here](https://www.frontendmentor.io/solutions/interactive-rating-using-html-css-and-javascript-qSiKPFnacv)
-- Live Site URL: [here](https://zun-liang.github.io/interactive-rating-component-main/)
+- Live Site URL: [here](https://zun-liang.github.io/fem-interactive-rating-component/)
 
 ## My process
 
@@ -55,7 +55,7 @@ Users should be able to:
 - how to use svg in html and css
 - best practice for positioning external js file
 - css element + element selector (not applied here but found it helpful)
-- differences among :root, html, and * selector
+- differences among :root, html, and \* selector
 - aspect-ratio
 - button:focus
 - document.querySelector document.querySelectorAll
@@ -78,4 +78,3 @@ Users should be able to:
 ## Acknowledgments
 
 A lot of thanks to [TsbSankara](https://www.youtube.com/watch?v=cQnUopEeZgw&t=1076s), his solution inspired me how to use javascript working on this challenge.
-
